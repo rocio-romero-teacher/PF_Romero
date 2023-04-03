@@ -118,13 +118,15 @@ header {
     background-color: rgb(67, 67, 219);
     color: white;
     padding: 1.5rem;
+    padding-inline-end: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   body {
     background-color: olive;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-inline-end: 20px;
   }
 }
 /*!

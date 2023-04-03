@@ -59,12 +59,14 @@ $background-color_4: olive;
 		background-color: $background-color_3;
 		color: $color_1;
 		padding: 1.5rem;
+		padding-inline-end: 20px;
 	}
 }
 @media screen and (max-width: 600px) {
 	body {
 		background-color: $background-color_4;
 		color: $color_1;
-		padding: 1rem;
+		padding: 1.5rem;
+		padding-inline-end: 20px;
 	}
 }
