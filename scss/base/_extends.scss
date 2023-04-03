@@ -50,6 +50,10 @@ header {
 	font-family: 'Roboto Serif', serif;
 }
 
+.navchange {
+	overflow: hidden;
+}
+
 $color_1: white;
 $background-color_3: rgb(67, 67, 219);
 $background-color_4: olive;
@@ -66,7 +70,30 @@ $background-color_4: olive;
 	body {
 		background-color: $background-color_4;
 		color: $color_1;
-		padding: 1.5rem;
-		padding-inline-end: 20px;
+		margin: auto;
+		padding-right: 2rem;
+		display: grid;
+		flex-direction: column;
+		table-layout: initial;
+		font-size: smaller;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		a {
+			&:hover {
+				font-size: 15px;
+				font-weight: bold;
+				background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+				box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+				background-position: 100% 0;
+				border-radius: 50px;
+				-moz-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				-webkit-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
+			}
+		}
 	}
 }
